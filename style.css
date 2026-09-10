@@ -2438,3 +2438,258 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================
+WEDDING PAGE - CLEANER GUEST NOTE
+========================================= */
+
+.guest-note {
+padding: 95px 8%;
+background: var(--soft-pink);
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.guest-note-inner {
+max-width: 650px;
+margin: 0 auto;
+}
+
+.guest-note-flower {
+position: relative;
+width: 52px;
+height: 52px;
+margin: 0 auto 24px;
+font-size: 0;
+}
+
+.guest-note-flower::before {
+content: "";
+position: absolute;
+width: 15px;
+height: 23px;
+top: 15px;
+left: 19px;
+border-radius: 50%;
+background: var(--ivory);
+box-shadow:
+0 -14px 0 -1px var(--ivory),
+0 14px 0 -1px var(--ivory),
+14px 0 0 -1px var(--ivory),
+-14px 0 0 -1px var(--ivory),
+10px -10px 0 -1px var(--ivory),
+-10px -10px 0 -1px var(--ivory),
+10px 10px 0 -1px var(--ivory),
+-10px 10px 0 -1px var(--ivory);
+}
+
+.guest-note-flower::after {
+content: "";
+position: absolute;
+width: 12px;
+height: 12px;
+top: 21px;
+left: 21px;
+border-radius: 50%;
+background: var(--gold);
+}
+
+.guest-note h2 {
+margin-bottom: 25px;
+}
+
+.guest-note p:not(.section-label) {
+max-width: 600px;
+margin: 0 auto 16px;
+color: var(--text);
+line-height: 1.85;
+}
+
+.guest-note-divider {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 16px;
+margin-top: 30px;
+color: var(--purple);
+}
+
+.guest-note-divider span {
+width: 60px;
+height: 1px;
+background: var(--gold);
+display: block;
+}
+
+/* =========================================
+VENUE ADDRESS
+========================================= */
+
+.venue-card {
+position: relative;
+}
+
+.address-link {
+display: inline-block;
+margin-top: 16px;
+color: var(--purple);
+font-size: 9px;
+font-weight: bold;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-decoration: none;
+border-bottom: 1px solid rgba(114, 80, 111, 0.35);
+padding-bottom: 4px;
+transition: 0.3s ease;
+}
+
+.address-link:hover {
+color: var(--orange);
+border-color: var(--orange);
+}
+
+/* =========================================
+RECEPTION SECTION
+========================================= */
+
+.reception-section {
+position: relative;
+padding: 110px 25px;
+text-align: center;
+background: var(--ivory);
+overflow: hidden;
+}
+
+.reception-section::before {
+content: "";
+position: absolute;
+width: 360px;
+height: 360px;
+top: -190px;
+left: -190px;
+border: 1px solid rgba(114, 80, 111, 0.10);
+border-radius: 50%;
+}
+
+.reception-section::after {
+content: "";
+position: absolute;
+width: 300px;
+height: 300px;
+bottom: -170px;
+right: -170px;
+border: 1px solid rgba(185, 111, 80, 0.10);
+border-radius: 50%;
+}
+
+.reception-section > * {
+position: relative;
+z-index: 2;
+}
+
+.reception-flower {
+position: relative;
+width: 48px;
+height: 48px;
+margin: 0 auto 24px;
+font-size: 0;
+}
+
+.reception-flower::before {
+content: "";
+position: absolute;
+width: 14px;
+height: 22px;
+top: 14px;
+left: 17px;
+border-radius: 50%;
+background: var(--cream);
+box-shadow:
+0 -13px 0 -1px var(--cream),
+0 13px 0 -1px var(--cream),
+13px 0 0 -1px var(--cream),
+-13px 0 0 -1px var(--cream),
+9px -9px 0 -1px var(--cream),
+-9px -9px 0 -1px var(--cream),
+9px 9px 0 -1px var(--cream),
+-9px 9px 0 -1px var(--cream);
+}
+
+.reception-flower::after {
+content: "";
+position: absolute;
+width: 11px;
+height: 11px;
+top: 19px;
+left: 19px;
+border-radius: 50%;
+background: var(--orange);
+}
+
+.reception-section h2 {
+margin-bottom: 25px;
+}
+
+.reception-text {
+max-width: 550px;
+margin: 0 auto;
+color: var(--muted);
+line-height: 1.9;
+}
+
+.reception-divider {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 16px;
+margin: 32px auto 22px;
+color: var(--purple);
+}
+
+.reception-divider span {
+width: 55px;
+height: 1px;
+background: var(--gold);
+}
+
+.reception-coming {
+color: var(--orange);
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+/* =========================================
+MOBILE WEDDING PAGE
+========================================= */
+
+@media (max-width: 600px) {
+
+```
+.guest-note {
+    padding: 75px 7%;
+}
+
+.guest-note h2,
+.reception-section h2 {
+    font-size: 34px;
+}
+
+.guest-note p:not(.section-label),
+.reception-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.guest-note-divider span,
+.reception-divider span {
+    width: 42px;
+}
+
+.address-link {
+    margin-top: 14px;
+}
+```
+
+}
